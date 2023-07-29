@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .header{
+    font-size: 40px;
+    color: hsl(229, 31%, 21%);;
+  }
+  
+  p{
+    font-size: 18px;
+    color: hsl(229, 8%, 60%);
+  }
+  .first-layout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  
+  .flex-column{
+    margin: 10em 5em;
+    padding: 2em 3em;
+    align-items: center;
+    gap: 1.8em;
+  }
+  #btn1{
+    cursor: pointer;
+    margin: 0.8em 0.8em 0.8em 0;
+    border: none;
+    padding: 1em 1.5em;
+    color: #fff;
+    border-radius: 5px;
+    background-color: hsl(231, 69%, 60%);
+    font-size: 18px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .1);
+  }
+
+  #btn2 {
+    cursor: pointer;
+    margin: 0.8em 0.8em 0.8em 0;
+    border: none;
+    padding: 1em 1.5em;
+    color: #000000;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1em;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .1);
+}
+  
+  #btn1:hover {
+    background-color: #fff;
+    color:black;
+  }
+  .shape{
+    width: 500px;
+    height:250px;
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 100px 0px 0px 100px;
+    position: relative;
+      top: 230px;
+      left: 200px;
+  }
+  
+  .overlay{
+    margin-top: -7em;
+    position:relative;
+    top:0;
+    left: 0;
+  }
+  
+  .MyImage{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  
+   @media(max-width:768px){
+    .first-layout{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+   .overlay{
+        margin: 1.0em 0.8em 8.2em 0.8em;
+        padding:1.2em 2.4em;
+    } 
+   
+ .MyImage{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+   }
+ .header-text{
+    margin: 0em;
+ }
+
+ .header-text p{
+    text-align: center;
+    padding: 1.2em;
+    font-size: 1.2em;
+ }
+
+  .header{
+    font-size: 2em;
+    color: hsl(229, 31%, 21%);
+    text-align: center;
+  } 
+  
+  
+ .MyImage img{
+    width:95%
+ }
+
+ .shape{
+    position: relative;      
+    width: 600px;
+    height: 200px;
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 100px 0px 0px 100px;
+    z-index: -1;
+    top: 280px;
+    left:200px;
+    
+ } */
+ .header-text{
+    width: 100%;
+ }
+ 
+ .flex-column{
+    margin:10em 0em;
+    padding:0em;
+    width:100%;
+  }
+
+.button{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#btn1, #btn2{
+    font-size:smaller;
+    font-weight: 200;
+    padding: 10px;
+}
+}
