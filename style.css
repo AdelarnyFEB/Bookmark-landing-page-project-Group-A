@@ -496,3 +496,166 @@ body {
       font-size: 1.2rem;
   }
 }
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Rubik, sans-serif;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+}
+.section-4{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto;
+}
+.frequently{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0px;
+}
+.faqs{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(180, 180, 180);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 10px;
+  padding: 0px 0px 25px;
+  margin: 0px;
+}
+.content-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 244.32px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.content-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 145.17px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.content-3{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 225.38px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.content-4{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 113px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.what-is, .how-can, .is-there, .what-about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0px;
+}
+.button{
+  text-align: center;
+  line-height: 80px;
+}
+.more-info{
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.more-info:hover{
+  background-color: hsl(229, 8%, 60%);
+}
+.svg{
+  width: 12px;
+  height: 8px;
+  padding-right: 10px;
+}
+hr{
+  background-color: rgb(228, 226, 226);
+  width: 390px;
+  height: 1px;
+  border: none;
+}
+@media (max-width: 600px) 
+{
+  .frequently
+  {
+    font-size: 18px;
+    margin: 14.94px 100px;
+    text-align: center;
+    line-height: 22px;
+  }
+  .faqs
+  {
+      width: 65%;
+      font-size: 12px;
+      line-height: 18px;
+      padding: 0px 0px 10px;
+  }
+  .svg {
+      width: 12px;
+      height: 8px;
+      padding-right: 0px;
+  }
+  .content-1{
+      gap: 132px;
+  }
+  .content-2{
+      gap: 47.02px;
+  }
+  .content-3{
+      gap: 115.77px;
+  }
+  .content-4{
+    gap: 19.44px;
+  }
+  .what-is, .how-can, .is-there, .what-about{
+      font-size: 12px;
+  }
+  .button{
+  text-align: center;
+  line-height: 80px;
+  }   
+  .more-info{
+      background-color: hsl(231, 69%, 60%);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 12px;
+      cursor: pointer;
+  }
+  hr{
+      width: 250px;
+  }
+}
