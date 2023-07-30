@@ -26,6 +26,61 @@ ul li a:hover {
 
   text-align: center;
 }
+ /* Section 2: (Images and "Bookmark in one click" section)  Starts*/
+ .sub-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  margin-top: 150px;
+  gap: 200px;
+}
+
+.sub-main_1 {
+  grid-column: 1/2;
+}
+.sub-main_2 {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+.txt {
+  width: 400px;
+}
+.sub h1 {
+  /* margin-top: 50px; */
+}
+
+.tab-1 {
+  height: 110%;
+  width: 100%;
+  position: relative;
+  left: 20%;
+  bottom: 90px;
+}
+
+.colour-box {
+  background-color: hsl(231, 69%, 60%);
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 100px;
+}
+
+.sub button {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  outline: none;
+  border: none;
+  font-family: 'Rubik', sans-serif;
+  border-radius: 5px 10px;
+  width: 120px;
+}
+
+.sub button:hover {
+  background-color: hsl(0, 94%, 66%);
+}
+
+/* Section 2: (Images and "Bookmark in one click" section)   Ends*/
 
 @media only screen and (max-width: 375px) {
   .navbar {
@@ -47,6 +102,90 @@ ul li a:hover {
     margin: 10px;
   }
 }
+/* Section 2: (Images and "Bookmark in one click" section)   Starts */
+@media screen and (max-width: 500px) {
+  .sub-main{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+  
+  }
+  .tab-1 {
+      height: 120%;
+      width: 95%;
+      left: 30px;
+      bottom: 30px;
+  }
+  
+  .colour-box {
+      height: 100%;
+      width: 90%;
+  }
+  .sub-main_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .sub-main_2 button {
+      display: none;
+  }
+  .txt {
+    width: 91%;
+    position: relative;
+    left: 19px;
+  }
+  .sub p {
+    line-height: 25px;
+    /* letter-spacing: 1px; */
+  }
+  .sub h1 {
+    font-size: 25px;
+  }
+ }
+ 
+  @media screen and ((min-width: 500px) and (max-width: 940px)) {
+    .tab-1 {
+      height: 100%;
+      width: 100%;
+      left: 10%;
+      bottom: 20%;
+  }
+  
+  .colour-box {
+      height: 100%;
+      width: 85%;
+  }
+  .sub-main {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+  }
+  .sub-main_2 {
+    text-align: left;
+    width: 50%;
+  }
+  .sub-main_2 button {
+  position: relative;
+  left: 20px;    
+  }
+  .txt {
+    width: 91%;
+    position: relative;
+    left: 19px;
+  }
+  .sub p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+  } 
+  .sub h1{
+  font-size: 25px;
+  }
+  }
+  /*Section 2: (Images and "Bookmark in one click" section)   End*/
+  
+
 @media only screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
