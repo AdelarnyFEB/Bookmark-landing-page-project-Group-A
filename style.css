@@ -846,7 +846,7 @@ hr {
   border: none;
   outline: none;
   color: aliceblue;
-
+}
  .btn:hover{
   cursor: pointer;
   border: 2px solid #fb5859;
