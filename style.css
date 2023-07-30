@@ -360,49 +360,109 @@ body {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  margin-top: 50px
 }
 
-h1, p {
-  margin: 10px 0;
+.section-3-text-container{
+  width: 500px;
+  height: 100px;
+  margin-bottom: 5px;
+  
+}
+
+.section-3-text-container h1{
+  font-size: 2rem;
+}
+
+.section-3-text-container p{
+  font-size: 1rem;
 }
 
 .extension {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100vw;
 }
 
-.extension-container {
-  flex: 1;
+.extension-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  height: 400px;
-  border: 1px solid #ccc;
+  justify-content: center;
+  width: 250px;
+  height: 340px;
   border-radius: 10px;
-  margin: 10px;
-  margin-top: 50px
-  
+  margin-right: 50px;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.051), -1px -1px 10px rgba(0, 0, 0, 0.051);
+}
+
+.extension-container2{
+  margin-top: 80px;
+}
+
+.textstyle{
+  margin-bottom: 0;
+}
+
+.extension-container3{
+  margin-top: 150px;
 }
 
 .extension-container .bg-dots {
-  margin-top: 20px;
+  margin-top: 5px;
+  width: 250px;
 }
 
 .install-button {
-  display: inline-block;
   padding: 10px 20px;
   background-color: hsl(231, 69%, 60%);
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 20px;
 }
 
-.install-button:hover {
+.install-button:hover{
   background-color: #fff;
-  color: black;
+  color: hsl(231, 69%, 60%);
+  text-decoration: none;
+  border: 2px solid hsl(231, 69%, 60%);
+}
+
+@media screen and (max-width: 375px) {
+  .extension {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 50px;
+      height: 1200px;
+    }
+
+    .extension-container{
+      margin-right: 0;
+    }
+
+    .extension-container2{
+      margin-top: 0;
+    }
+
+    .extension-container3{
+      margin-top: 0;
+    }
+
+  .section-3-text-container{
+      width: 300px;
+      height: 100px;
+      
+    }
+  
+    .section-3-text-container h1{
+      font-size: 1.5rem;
+    }
+  
+    .section-3-text-container p{
+      font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
