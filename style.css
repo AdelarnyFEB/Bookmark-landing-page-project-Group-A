@@ -19,12 +19,30 @@ ul li a {
   padding: 10px;
   color: hsl(229, 31%, 21%);
 }
-ul li a:hover {
-  background-color: red;
-  padding: 5px 20px;
-  color: #fff;
+ul li a:hover{
+  color: red;
+  cursor: pointer;
+}
 
-  text-align: center;
+.btn1{
+  background-color: red;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #fb5859;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.btn1:hover{
+  cursor: pointer;
+  border: 2px solid red;
+  color: red;
+  background-color: white;
 }
  /* Section 2: (Images and "Bookmark in one click" section)  Starts*/
  .sub-main {
