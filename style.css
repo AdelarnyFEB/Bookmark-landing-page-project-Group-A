@@ -1,4 +1,4 @@
-/**{
+        /**{
     margin: 0;
     box-sizing: border-box;
     font-family: Rubik;
@@ -23,7 +23,7 @@ ul li a:hover{
   color: red;
   cursor: pointer;
 }
-
+             
 .btn1{
   background-color: red;
   padding: 10px 20px;
@@ -37,13 +37,15 @@ ul li a:hover{
   outline: none;
   color: white;
 }
-
+   
 .btn1:hover{
   cursor: pointer;
   border: 2px solid red;
   color: red;
   background-color: white;
-}
+} 
+
+                 
  /* Section 2: (Images and "Bookmark in one click" section)  Starts*/
  .sub-main {
   display: grid;
@@ -67,7 +69,7 @@ text-align: left;
 .txt {
   width: 400px;
 }
-
+                                                            
 .tab-1 {
   height: 110%;
   width: 100%;
@@ -90,7 +92,7 @@ text-align: left;
   border: none;
   font-family: 'Rubik', sans-serif;
   border-radius: 5px;
-  width: 120px;
+    width: 120px;
     padding: 10px 15px;
 }
 
@@ -191,7 +193,7 @@ text-align: left;
     width: 91%;
     position: relative;
     left: 19px;
-  }
+      }
   .subb p {
     line-height: 20px;
     letter-spacing: 1px;
@@ -238,13 +240,16 @@ p {
   color: hsl(229, 8%, 60%);
 }
 .first-layout {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
   align-items: center;
+  margin-bottom: 150px;
 }
 
 .flex-column {
-  margin: 10em 5em;
+  margin-top: 10px;
+  margin-bottom: 50px;
   padding: 2em 3em;
   align-items: center;
   gap: 1.8em;
@@ -313,22 +318,27 @@ p {
 @media (max-width: 768px) {
   .first-layout {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap-reverse;
+    margin-bottom: 50px;
   }
 
   .overlay {
     margin: 1em 0.8em 8.2em 0.8em;
     padding: 1.2em 2.4em;
+  width: 100%
   }
 
   .MyImage {
     display: flex;
-    justify-content: center;
+    flex-direction: column;    
+    justify-content: center;     
     position: absolute;
+    width: 80%;
+                                    
   }
   .header-text {
-    margin: 0em;
+    margin: 0em;   
   }
 
   .header-text p {
@@ -336,15 +346,15 @@ p {
     padding: 1.2em;
     font-size: 1.2em;
   }
-
+ 
   .header {
     font-size: 2em;
     color: hsl(229, 31%, 21%);
     text-align: center;
   }
 
-  .MyImage img {
-    width: 95%;
+   .MyImage img {
+    width: 5%;
   }
 
   .shape {
@@ -353,16 +363,16 @@ p {
     height: 200px;
     background-color: hsl(231, 69%, 60%);
     border-radius: 100px 0px 0px 100px;
-    z-index: -1;
-    top: 280px;
-    left: 200px;
+    position: relative;
+    top: 0;
   }
    .header-text {
     width: 100%;
   }
 
   .flex-column {
-    margin: 10em 0em;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 0em;
     width: 100%;
   }
